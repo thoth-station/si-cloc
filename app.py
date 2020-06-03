@@ -30,22 +30,14 @@ init_logging()
 __version__ = "0.1.0"
 __title__ = "si-cloc"
 
+
 @click.command()
 @click.pass_context
 @click.option(
-    "--output",
-    "-o",
-    type=str,
-    default="-",
-    envvar="THOTH_SI_CLOC_OUTPUT",
-    help="Output file to print results to.",
+    "--output", "-o", type=str, default="-", envvar="THOTH_SI_CLOC_OUTPUT", help="Output file to print results to."
 )
 @click.option(
-    "--from-directory",
-    "-d",
-    type=str,
-    envvar="THOTH_SI_CLOC_DIR",
-    help="Input directory for running bandit.",
+    "--from-directory", "-d", type=str, envvar="THOTH_SI_CLOC_DIR", help="Input directory for running bandit."
 )
 @click.option(
     "--package-name",
@@ -92,12 +84,13 @@ def si_cloc(
                     full_path = os.path.join(d, f)
                     break
             else:
-                raise FileNotFoundError(f"No source distribution found for {package_name}==={package_version} "
-                                        f"on {package_index}")
+                raise FileNotFoundError(
+                    f"No source distribution found for {package_name}==={package_version} " f"on {package_index}"
+                )
 
-            out = run_command(f"cloc --extract-with='gzip -dc >FILE< | tar xf -' {full_path} --json", is_json=True,)
+            out = run_command(f"cloc --extract-with='gzip -dc >FILE< | tar xf -' {full_path} --json", is_json=True)
     else:
-        out = run_command(f"cloc {from_directory} --json", is_json=True,)
+        out = run_command(f"cloc {from_directory} --json", is_json=True)
     results = out.stdout
     if results is None:
         raise Exception(f"cloc output is empty with the following in stderr:\n{out.stderr}")
