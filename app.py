@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# si-bandit
+# si-cloc
 # Copyright(C) 2020 Kevin Postlethwait.
 #
 # This program is free software: you can redistribute it and / or modify
@@ -70,7 +70,7 @@ __title__ = "si-cloc"
     help="Which index is used to find package.",
 )
 @click.option("--no-pretty", is_flag=True, help="Do not print results nicely.")
-def si_bandit(
+def si_cloc(
     click_ctx,
     output: Optional[str],
     from_directory: Optional[str],
@@ -79,7 +79,7 @@ def si_bandit(
     package_index: Optional[str],
     no_pretty: bool,
 ):
-    """Run the cli for si-bandit."""
+    """Run the cli for si-cloc."""
     if from_directory is None:
         with tempfile.TemporaryDirectory() as d:
             command = (
@@ -112,4 +112,4 @@ def si_bandit(
     )
 
 
-__name__ == "__main__" and si_bandit()
+__name__ == "__main__" and si_cloc()
