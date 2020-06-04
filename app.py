@@ -96,7 +96,7 @@ def si_cloc(
         raise Exception(f"cloc output is empty with the following in stderr:\n{out.stderr}")
     print_command_result(
         click_ctx=click_ctx,
-        result=out,
+        result=results,
         analyzer=__title__,
         analyzer_version=__version__,
         output=output,
