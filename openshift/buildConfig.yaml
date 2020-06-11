@@ -94,10 +94,8 @@ objects:
           env:
             - name: ENABLE_PIPENV
               value: "1"
-            - name: UPGRADE_PIP_TO_LATEST
-              value: ""
             - name: "THOTH_DRY_RUN"
-              value: "0"
+              value: "1"
             - name: "THOTH_ADVISE"
               value: ${THOTH_ADVISE}
             - name: "THAMOS_VERBOSE"
