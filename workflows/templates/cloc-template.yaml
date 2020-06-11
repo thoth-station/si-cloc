@@ -47,13 +47,13 @@ spec:
         env:
           - name: THOTH_DOCUMENT_ID
             value: "{{inputs.parameters.THOTH_DOCUMENT_ID}}"
-          - name: THOTH_SI_BANDIT_OUTPUT
+          - name: THOTH_SI_CLOC_OUTPUT
             value: "/mnt/workdir/{{inputs.parameters.THOTH_DOCUMENT_ID}}"
-          - name: THOTH_SI_BANDIT_PACKAGE_NAME
+          - name: THOTH_SI_CLOC_PACKAGE_NAME
             value: "{{inputs.parameters.THOTH_SI_CLOC_PACKAGE_NAME}}"
-          - name: THOTH_SI_BANDIT_PACKAGE_VERSION
+          - name: THOTH_SI_CLOC_PACKAGE_VERSION
             value: "{{inputs.parameters.THOTH_SI_CLOC_PACKAGE_VERSION}}"
-          - name: THOTH_SI_BANDIT_PACKAGE_INDEX
+          - name: THOTH_SI_CLOC_PACKAGE_INDEX
             value: "{{inputs.parameters.THOTH_SI_CLOC_PACKAGE_INDEX}}"
         volumeMounts:
           - name: workdir
