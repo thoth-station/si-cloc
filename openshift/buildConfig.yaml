@@ -50,7 +50,7 @@ parameters:
     required: true
     name: THOTH_PROVENANCE_CHECK
     value: "0"
-  
+
   - description: Error fallback flag
     displayName: THOTH_ERROR_FALLBACK
     required: true
