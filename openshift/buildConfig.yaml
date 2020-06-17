@@ -90,7 +90,7 @@ objects:
         sourceStrategy:
           from:
             kind: ImageStreamTag
-            name: s2i-thoth-ubi8-py36:latest
+            name: s2i-thoth-f32-py38-cloc:latest
           env:
             - name: ENABLE_PIPENV
               value: "1"
