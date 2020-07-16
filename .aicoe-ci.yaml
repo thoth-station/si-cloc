@@ -1,0 +1,15 @@
+check:
+  - thoth-precommit
+  - thoth-build
+build:
+  base-image: "quay.io/thoth-station/s2i-thoth-f32-py38-cloc:latest"
+  build-stratergy: "Dockerfile"
+  registry: "quay.io"
+  registry-org: "thoth-station"
+  registry-project: "si-cloc"
+  registry-secret: "thoth-station-thoth-pusher-secret"
+deploy:
+  project-org: "thoth-station"
+  project-name: "thoth-application"
+  image-name: "si-cloc"
+  overlay-contextpath: "security-indicators/overlays/test/imagestreamtag.yaml "
