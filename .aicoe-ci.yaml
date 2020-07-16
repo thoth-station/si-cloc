@@ -3,7 +3,7 @@ check:
   - thoth-build
 build:
   base-image: "quay.io/thoth-station/s2i-thoth-f32-py38-cloc:latest"
-  build-stratergy: "Dockerfile"
+  build-stratergy: "Source"
   registry: "quay.io"
   registry-org: "thoth-station"
   registry-project: "si-cloc"
