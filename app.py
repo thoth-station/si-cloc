@@ -20,26 +20,24 @@
 import tempfile
 import click
 import os
+import logging
 from typing import Optional
 from thoth.analyzer import run_command
 from thoth.analyzer import print_command_result
 from thoth.common import init_logging
+from thoth.analyzer import __version__ as __analyzer__version__
+from thoth.common import __version__ as __common__version__
 
 init_logging()
 
 __version__ = "0.1.2"
 __title__ = "si-cloc"
 
-from thoth.analyzer import __version__ as __analyzer__version__
-from thoth.common import __version__ as __common__version__
-
-__component_version__ = (
-    f"{__version__}+"
-    f"analyzer.{__analyzer__version__}.common.{__common__version__}."
-)
+__component_version__ = f"{__version__}+" f"analyzer.{__analyzer__version__}.common.{__common__version__}."
 
 _LOGGER = logging.getLogger(__title__)
 _LOGGER.info("SI Cloc v%s", __component_version__)
+
 
 @click.command()
 @click.pass_context
