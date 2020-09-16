@@ -30,7 +30,7 @@ from thoth.common import __version__ as __common__version__
 
 init_logging()
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __title__ = "si-cloc"
 
 __component_version__ = f"{__version__}+" f"analyzer.{__analyzer__version__}.common.{__common__version__}."
