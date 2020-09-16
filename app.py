@@ -33,13 +33,13 @@ __title__ = "si-cloc"
 from thoth.analyzer import __version__ as __analyzer__version__
 from thoth.common import __version__ as __common__version__
 
-__service_version__ = (
+__component_version__ = (
     f"{__version__}+"
     f"analyzer.{__analyzer__version__}.common.{__common__version__}."
 )
 
 _LOGGER = logging.getLogger(__title__)
-_LOGGER.info("SI Cloc v%s", __service_version__)
+_LOGGER.info("SI Cloc v%s", __component_version__)
 
 @click.command()
 @click.pass_context
