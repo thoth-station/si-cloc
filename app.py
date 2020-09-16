@@ -27,7 +27,7 @@ from thoth.common import init_logging
 
 init_logging()
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __title__ = "si-cloc"
 
 from thoth.analyzer import __version__ as __analyzer__version__

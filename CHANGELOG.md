@@ -37,3 +37,11 @@
 - remove the extra spaces
 - include aicoe-ci configuration file (#24)
 - :pushpin: Automatic update of dependency thoth-common from 0.14.1 to 0.14.2 (#20)
+
+## Release 0.1.3 (2020-09-16T07:55:48)
+### Features
+* Use __component_version__
+* Add version logs
+* migrated to thoth-application (#25)
+### Automatic Updates
+* :pushpin: Automatic update of dependency thoth-common from 0.14.2 to 0.18.3 (#27)
