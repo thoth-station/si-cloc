@@ -101,7 +101,11 @@ def si_cloc(
         out = run_command(f"cloc {from_directory} --json", is_json=True)
     results = out.stdout
     if results is None:
-        raise Exception(f"cloc output is empty with the following in stderr:\n{out.stderr}")
+        results = {"error": True, "error_messages": [out.stderr]}
+        _LOGGER.warning("cloc output is empty with the following in stderr:\n%s", out.stderr)
+    else:
+        results["error"] = False
+
     print_command_result(
         click_ctx=click_ctx,
         result=results,
