@@ -88,10 +88,10 @@
         },
         "google-auth": {
             "hashes": [
-                "sha256:712dd7d140a9a1ea218e5688c7fcb04af71b431a29ec9ce433e384c60e387b98",
-                "sha256:9c0f71789438d703f77b94aad4ea545afaec9a65f10e6cc1bc8b89ce242244bb"
+                "sha256:5176db85f1e7e837a646cd9cede72c3c404ccf2e3373d9ee14b2db88febad440",
+                "sha256:b728625ff5dfce8f9e56a499c8a4eb51443a67f20f6d28b67d5774c310ec4b6b"
             ],
-            "version": "==1.22.1"
+            "version": "==1.23.0"
         },
         "idna": {
             "hashes": [
@@ -228,10 +228,10 @@
         },
         "pytz": {
             "hashes": [
-                "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed",
-                "sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048"
+                "sha256:3e6b7dd2d1e0a59084bcee14a17af60c5c562cdc16d828e8eba2e683d3a7e268",
+                "sha256:5c55e189b682d420be27c6995ba6edce0c0a77dd67bfbe2ae6607134d5851ffd"
             ],
-            "version": "==2020.1"
+            "version": "==2020.4"
         },
         "pyyaml": {
             "hashes": [
@@ -317,10 +317,10 @@
         },
         "sentry-sdk": {
             "hashes": [
-                "sha256:0fc1d3d74f6262ab47c0debb52145c41b95d120917d4149d6d7c6357b37e2587",
-                "sha256:a3716e98a1285a74eeaea7418a5b8fb2d7568fa11b5fba389946f465876a4d44"
+                "sha256:17b725df2258354ccb39618ae4ead29651aa92c01a92acf72f98efe06ee2e45a",
+                "sha256:9040539485226708b5cad0401d76628fba4eed9154bf301c50579767afe344fd"
             ],
-            "version": "==0.19.0"
+            "version": "==0.19.2"
         },
         "six": {
             "hashes": [
@@ -339,11 +339,11 @@
         },
         "thoth-common": {
             "hashes": [
-                "sha256:5bfaa82427d7ed0657517e1209583284d85e53c960f08ad61e98fa3295538427",
-                "sha256:b6af7d51257bd61586b6cd8bc5323e8b9b5ace4ab1d35ccf1456d4e8474aa835"
+                "sha256:60b8fbc334f922333631e0e7ea5a90d3552fc518a48805eaf2401d6be1a1accb",
+                "sha256:c9dd11914f54fe9e186d858b9924ca158fb9e0caffd8be803bb6bb7d388bc10b"
             ],
             "index": "pypi",
-            "version": "==0.20.1"
+            "version": "==0.20.4"
         },
         "tzlocal": {
             "hashes": [
@@ -354,10 +354,10 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a",
-                "sha256:e7983572181f5e1522d9c98453462384ee92a0be7fac5f1413a1e35c56cc0461"
+                "sha256:8d7eaa5a82a1cac232164990f04874c594c9453ec55eef02eab885aa02fc17a2",
+                "sha256:f5321fbe4bf3fefa0efd0bfe7fb14e90909eb62a48ccda331726b4319897dd5e"
             ],
-            "version": "==1.25.10"
+            "version": "==1.25.11"
         },
         "websocket-client": {
             "hashes": [
