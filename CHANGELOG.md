@@ -47,3 +47,9 @@
 ### Automatic Updates
 * :pushpin: Automatic update of dependency thoth-common from 0.18.3 to 0.19.0 (#30)
 * :pushpin: Automatic update of dependency thoth-common from 0.14.2 to 0.18.3 (#27)
+
+## Release 0.1.4 (2020-11-04T22:16:43)
+### Features
+* give flag for if cloc run errored (#36)
+### Automatic Updates
+* :pushpin: Automatic update of dependency thoth-common from 0.19.0 to 0.20.1 (#35)
