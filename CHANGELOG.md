@@ -1,5 +1,14 @@
 # Changelog for Thoth's SI-cloc GitHub Project
 
+## Release 0.2.0 (2021-12-06T20:06:34)
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment (#51)
+* Update pyproject.toml to use Python 3.8 (#44)
+* removed bissenbay, thanks for your contributions!
+* :arrow_up: autoupdate of pre-commit plugins
+* port to python 38 (#42)
+* :pushpin: Automatic update of dependency thoth-common from 0.20.1 to 0.20.4 (#41)
+* :pushpin: Automatic update of dependency thoth-common from 0.20.1 to 0.20.4 (#39)
+
 ## Release 0.1.1 (2020-07-16T18:15:48)
 
 - Release of version 0.1.1 (#21)
