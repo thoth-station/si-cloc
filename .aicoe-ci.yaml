@@ -1,5 +1,4 @@
 check:
-  - thoth-precommit
   - thoth-build
 build:
   base-image: "quay.io/thoth-station/s2i-thoth-f32-py38-cloc:latest"
